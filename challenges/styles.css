@@ -1,0 +1,32 @@
+body{
+    background-color: pink;
+    text-align: center;
+}
+h5, h1, h3, p{
+    color: white;
+}
+img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+ol li{
+    text-align: center;
+    margin:0 auto;
+}
+footer p{
+    color: black;;
+}
+main p{
+    color: black;
+}
+
+h1:hover{
+    color:black;
+}
+
+*{
+ border: 1px solid;
+}

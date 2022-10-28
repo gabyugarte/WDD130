@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    background-color:grey;
+}
+
+section img{
+    width: 100%;
+}
+main .circle_images img{
+    width: 250px;
+    border-radius: 50%;
+    border-style: solid;
+    margin: 50px 80px;
+}
+ 
+main .circle_images{
+    text-align: center;;
+}
