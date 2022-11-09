@@ -12,6 +12,7 @@ body{
     font-size: 22px;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 header{
     background-color: #396E94;
@@ -174,7 +175,9 @@ main section{
 }
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
+    cursor: pointer;
 }
+
 #background {
     height: 725px;
     background-color: #fbfcff;
@@ -182,7 +185,7 @@ main section{
 footer{
     background-color: #396E94;
     padding: 25px 50px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -206,7 +209,88 @@ footer p a:hover {
 footer .social img{
     padding-top: 15px;
 }
+/* ------------------------Rivers Page------------------------ */
+.rivers_title{
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #2f675e;
+    text-align: center;
+}
+.rivers-name{
+    font-family: var(--heading-font);
+    font-size: 1em;
+    margin-top: 10px;
+    color: #2f675e;
+}
 
+.rivers-p{
+    font-family: var(--paragraph-font);
+    font-size: .8em;
+    margin-left: 30px;
+}
+
+.rivers-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 10px;
+    margin-bottom:20px;
+    }
+.rivers-name{
+    text-align: center;
+}
+.rivers1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+    margin-left: 30px;
+}
+.rivers-img1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-right: 30px;
+}
+.rivers2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+    margin-right: 30px;
+}
+.rivers-img2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 30px;
+}
+.rivers2 li{
+    list-style: none;
+    font-family: var(--paragraph-font);
+    font-size: .8em;
+    margin-left: 30px;
+}
+
+.rivers3{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin: 0px 30px;
+}
+.rivers3 li{
+    list-style: none;
+    font-family: var(--paragraph-font);
+    font-size: .8em;
+    margin-left: 30px;
+}
+.rivers-img{
+    border: 1px solid #2f675e;
+    border-radius: 4px;
+    padding: 5px;
+}
+.rivers-img:hover{
+    /* opacity: .6;
+    transform: scale(1.1); */
+    box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.5);
+    cursor: pointer;
+}
 /* Responsive design */
 
 @media screen and (max-width: 900px) {
