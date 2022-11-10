@@ -222,6 +222,7 @@ footer .social img{
     font-size: 1em;
     margin-top: 10px;
     color: #2f675e;
+    letter-spacing: 2px;
 }
 
 .rivers-p{
@@ -280,6 +281,15 @@ footer .social img{
     font-size: .8em;
     margin-left: 30px;
 }
+
+.rivers3 p:nth-child(4){
+    font-weight: bold;
+}
+
+ul li:before{
+    content: '✔';
+}
+
 .rivers-img{
     border: 1px solid #2f675e;
     border-radius: 4px;
