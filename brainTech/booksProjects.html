@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainTech - Artificial Intelligence</title>
+    <title>BrainTech - Books and Projects</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -47,13 +47,31 @@
             <section class="projects-galery">
                 <div class="row_grid">
                     <div class="column1">
-                      <img src="img/AILitlelCars.jpg" alt="AI Projects" style="width:100%">
+                      <img id= "myImg" src="img/AILitlelCars.jpg" alt="AI Projects - Robots" style="width:100%">
+                    </div>
+                         <!-- The Modal 1-->
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption"></div>
                     </div>
                     <div class="column2">
-                      <img src="img/AIMachines.jpg" alt="AI Projects" style="width:100%">
+                      <img id= "myImg2" src="img/AIMachines.jpg" alt="Machine Learning" style="width:100%">
+                    </div>
+                     <!-- The Modal 2-->
+                    <div id="myModal2" class="modal2">
+                      <span class="close2">&times;</span>
+                      <img class="modal-content" id="img02">
+                      <div id="caption2"></div>
                     </div>
                     <div class="column3">
-                      <img src="img/AIMachines2.jpg" alt="AI Projects" style="width:100%">
+                      <img id= "myImg3" src="img/AIMachines2.jpg" alt="AI Projects - Automation" style="width:100%">
+                    </div>
+                    <!-- The Modal 3-->
+                    <div id="myModal3" class="modal3">
+                      <span class="close3">&times;</span>
+                      <img class="modal-content" id="img03">
+                      <div id="caption3"></div>
                     </div>
                   </div>
                   <ul class="recomendations_list"> 
@@ -65,9 +83,8 @@
                       <p>You can build your own AI translator app with a transformer. To do this, you can load a pre-trained transformer model into Python. Then, transform the text you want to translate into tokens and feed it into the pre-trained model.</p>
                     <li>Instagram Spam Detection</li>
                       <p>You can build a spam detection model using AI techniques to identify the difference between spam and legitimate comments.</p>
-                    </ul>
+                  </ul>
                     <h4>I reccomend this page for more project ideas: <a class="link" href="https://www.projectpro.io/article/artificial-intelligence-project-ideas/461" target="_blank">AI Projects for begginers</a></h4>
-
             </section>
         </main>
         <footer>
@@ -87,5 +104,54 @@
           </div>
       </footer>
     </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      var modal2 = document.getElementById("myModal2");
+      var modal3 = document.getElementById("myModal3");
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var img2 = document.getElementById("myImg2");
+      var img3 = document.getElementById("myImg3");
+      var modalImg = document.getElementById("img01");
+      var modalImg2 = document.getElementById("img02");
+      var modalImg3 = document.getElementById("img03");
+
+      var captionText = document.getElementById("caption");
+      var captionText2 = document.getElementById("caption2");
+      var captionText3 = document.getElementById("caption3");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img2.onclick = function(){
+        modal2.style.display = "block";
+        modalImg2.src = this.src;
+        captionText2.innerHTML = this.alt;
+      }
+      img3.onclick = function(){
+        modal3.style.display = "block";
+        modalImg3.src = this.src;
+        captionText3.innerHTML = this.alt;
+      }
+    
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      var span2 = document.getElementsByClassName("close2")[0];
+      var span3 = document.getElementsByClassName("close3")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      span2.onclick = function() { 
+        modal2.style.display = "none";
+      }
+      span3.onclick = function() { 
+        modal3.style.display = "none";
+      }
+      </script>
 </body>
 </html>
