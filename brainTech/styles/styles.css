@@ -139,7 +139,9 @@ nav a:link, nav a:visited {
   }
   
 /* ------------------------Learning Path - Page------------------------ */
-
+.content{
+  max-width: 100%;
+}
 .lp_title{
   font-family: var(--heading-font);
   font-size: 1.5em;
@@ -291,9 +293,6 @@ ul li:before{
   max-width: 100%;
   padding: 20px;
 }
-/* .content{
-  width: 100%;
-} */
 .b-recomendations{
   margin:0 30px;
   text-align: center;
@@ -548,6 +547,16 @@ footer p a:hover {
 footer .social img{
     padding-top: 15px;
 }
+
+.social a:hover{
+  opacity: 0.7;
+  cursor:pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+
+
+
 
 /* ------------------------Responsive design------------------------ */
 
